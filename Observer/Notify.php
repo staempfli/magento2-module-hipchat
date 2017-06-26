@@ -51,11 +51,12 @@ class Notify implements ObserverInterface
      */
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
+        $notification = strip_tags($observer->getMessage());
+
         if ($this->config->getMessageFormat() === 'html') {
             $notification = nl2br($observer->getMessage());
-        } else {
-            $notification = strip_tags($observer->getMessage());
         }
+
         $message = $this->message
             ->setUrl(sprintf('%s/%d/notification?auth_token=%s',
                 $this->config->getUrl(),
