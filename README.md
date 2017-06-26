@@ -3,6 +3,8 @@
 Magento 2 Module to send Notifications to a HipChat Room via Webhook.
 
 [![Codacy](https://api.codacy.com/project/badge/Grade/c7f30852ff194d9bbcc00f208a8ccc7f)](https://www.codacy.com/app/Staempfli/magento2-module-hipchat?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=staempfli/magento2-module-hipchat&amp;utm_campaign=Badge_Grade)
+[![Code Climate](https://codeclimate.com/github/staempfli/magento2-module-hipchat/badges/gpa.svg)](https://codeclimate.com/github/staempfli/magento2-module-hipchat)
+[![Issue Count](https://codeclimate.com/github/staempfli/magento2-module-hipchat/badges/issue_count.svg)](https://codeclimate.com/github/staempfli/magento2-module-hipchat)
 
 Requirements
 ------------
