@@ -16,6 +16,8 @@ use Staempfli\HipChat\Model\Config;
 
 class Notify implements ObserverInterface
 {
+    const MESSAGE_LIMIT = 10000;
+
     /**
      * @var MessageInterface
      */
@@ -64,7 +66,7 @@ class Notify implements ObserverInterface
                 $this->config->getToken()
             ))
             ->setMessageData([
-                'message' => $notification,
+                'message' => substr($notification, 0, self::MESSAGE_LIMIT),
                 'color' => $this->config->getColor(),
                 'notify' => $this->config->doNotify(),
                 'message_format' => 'html'
