@@ -10,7 +10,7 @@ Requirements
 ------------
 - PHP >= 7.0.*
 - Magento >= 2.1.*
-- [staempfli/magento2-module-chat-connector](https://github.com/staempfli/magento2-module-chat-connector) >= 1.0
+- [staempfli/magento2-module-chat-connector](https://github.com/staempfli/magento2-module-chat-connector) >= 1.1
 
 Compatibility
 -------------
@@ -19,7 +19,7 @@ Compatibility
 ## Installation
 
 ```
-$ composer require "staempfli/magento2-module-hipchat":"~1.0"
+$ composer require "staempfli/magento2-module-hipchat":"~1.1"
 ```
 
 Support

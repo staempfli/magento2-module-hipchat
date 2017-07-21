@@ -59,12 +59,13 @@ class Notify implements ObserverInterface
             $notification = nl2br($observer->getMessage());
         }
 
-        $message = $this->message
+            $message = $this->message
             ->setUrl(sprintf('%s/%d/notification?auth_token=%s',
                 $this->config->getUrl(),
                 $this->config->getRoomId(),
                 $this->config->getToken()
             ))
+            ->setEvent($observer->getEvent())
             ->setMessageData([
                 'message' => substr($notification, 0, self::MESSAGE_LIMIT),
                 'color' => $this->config->getColor(),
